@@ -1,0 +1,137 @@
+.project {
+   text-align: center;
+   margin: 1rem;
+   background-color: #fff;
+   box-shadow: 0.3rem 0.3rem 0.5rem #777;
+   overflow: hidden;
+   position: relative;
+   transition: var(--transition);
+   // @include respond(768) {
+   //    overflow: visible;
+   //    margin: 2rem;
+   // }
+   @include respond(576) {
+      width: 100%;
+   }
+   &__text {
+      width: 100%;
+      letter-spacing: 0.1rem;
+      position: absolute;
+      top: -10rem;
+      transition: var(--transition);
+      @include respond(768) {
+         position: relative;
+         top: 0;
+      }
+   }
+   &__name {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #333;
+      text-transform: capitalize;
+   }
+   &__technologies {
+      font-size: 1.8rem;
+      color: var(--c-1);
+   }
+   &__picture {
+      width: 40rem;
+      display: block;
+      transition: var(--transition);
+      @include respond(576) {
+         width: 100%;
+      }
+   }
+   &__link {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #333;
+      letter-spacing: 0.1rem;
+      border: 1px solid var(--c-1);
+      padding: 0 1rem;
+      background-color: #fff;
+      text-transform: capitalize;
+      position: absolute;
+      bottom: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border: var(--border);
+      transition: var(--transition);
+      // @include respond(768) {
+      //    display: inline-block;
+      //    margin: 2rem 0;
+      //    position: relative;
+      //    bottom: 0;
+      //    left: 0;
+      //    transform: translateX(0);
+      // }
+   }
+   // hover
+   &:hover {
+      box-shadow: 1rem 1rem 1rem #777;
+   }
+   &:hover &__text {
+      top: 5rem;
+      z-index: 3;
+      transition: var(--transition) 200ms;
+   }
+   &:hover &__link {
+      bottom: 5rem;
+      z-index: 3;
+      transition: var(--transition) 200ms;
+   }
+   &:hover &__picture {
+      opacity: 0.4;
+   }
+   @supports (filter: blur()) {
+      &:hover &__picture {
+         opacity: 0.4;
+         filter: blur(8px);
+      }
+   }
+
+   // ====== mobile
+   @include respond(768) {
+      margin: 2rem;
+      overflow: visible;
+      &__text {
+         padding: 1rem 0;
+         position: relative;
+         top: 0;
+      }
+      &__picture {
+         width: 40rem;
+         display: block;
+         transition: var(--transition);
+      }
+      &__link {
+         display: inline-block;
+         margin: 2rem 0;
+         padding: 0 1rem;
+         position: relative;
+         bottom: 0;
+         left: 0;
+         transform: none;
+      }
+      // hover
+      &:hover {
+         box-shadow: 1rem 1rem 1rem #777;
+      }
+      &:hover &__text {
+         top: 0;
+      }
+      &:hover &__link {
+         bottom: 0;
+      }
+      &:hover &__picture {
+         opacity: 1;
+      }
+      @supports (filter: blur()) {
+         &:hover &__picture {
+            opacity: 1;
+            filter: blur(0);
+         }
+      }
+   }
+}

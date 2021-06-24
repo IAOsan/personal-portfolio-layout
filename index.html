@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css?t=1624431778434">
+    <title>Personal Portfolio</title>
+  </head>
+  <body> 
+    <header class="header" id="home">
+      <div class="header__personBox">
+        <h1 class="heading--1 header__heading">Web Developer</h1><img class="header__img" src="assets/img/john-smith.jpg" alt="John Smith">
+        <h3 class="header__name">John Smith</h3><a class="header__btn" href="#portfolio">Projects</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list u-flex-center">
+          <li class="nav__item"> <a class="nav__link" href="#home">home</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#about">about</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#portfolio">portfolio</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <article> 
+        <section class="skills" id="about"> 
+          <h2 class="heading--2 skills__heading">About Me</h2>
+          <div class="skills__wrapper"> 
+            <div class="skills__bar"> 
+              <p class="skills__textBar">HTML  <span>97</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">CSS  <span>89</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">JavaScript  <span>85</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">SASS  <span>87</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">React JS  <span>80</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">Node JS  <span>70</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+            <div class="skills__bar"> 
+              <p class="skills__textBar">Mongo DB  <span>50</span>%</p>
+              <div class="skills__percent"></div>
+            </div>
+          </div>
+          <div class="skills__services">
+            <article class="skills__service"><i class="skills__serviceIcon far fa-lightbulb"></i>
+              <h3 class="heading--3 skills__serviceHeading">creative </h3>
+            </article>
+            <article class="skills__service"><i class="skills__serviceIcon fas fa-cut"></i>
+              <h3 class="heading--3 skills__serviceHeading">problem solving </h3>
+            </article>
+            <article class="skills__service"><i class="skills__serviceIcon fas fa-tachometer-alt"></i>
+              <h3 class="heading--3 skills__serviceHeading">fast </h3>
+            </article>
+            <article class="skills__service"><i class="skills__serviceIcon fas fa-rocket"></i>
+              <h3 class="heading--3 skills__serviceHeading">dynamic </h3>
+            </article>
+          </div>
+        </section>
+        <section class="projects" id="portfolio"> 
+          <h2 class="heading--2 projects__heading">my projects</h2>
+          <div class="projects__grid u-flex-center">
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">architect website</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-1-sm.jpg 300w, assets/img/project-1.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-1.jpg" alt="architect website"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">budget app</h3>
+                <h4 class="project__technologies">React JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-2-sm.jpg 300w, assets/img/project-2.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-2.jpg" alt="budget app"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">wine house</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-3-sm.jpg 300w, assets/img/project-3.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-3.jpg" alt="wine house"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">task manager</h3>
+                <h4 class="project__technologies">React JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-4-sm.jpg 300w, assets/img/project-4.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-4.jpg" alt="task manager"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">the road</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-5-sm.jpg 300w, assets/img/project-5.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-5.jpg" alt="the road"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">food recipe app</h3>
+                <h4 class="project__technologies">React JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-6-sm.jpg 300w, assets/img/project-6.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-6.jpg" alt="food recipe app"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">slideshow</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-7-sm.jpg 300w, assets/img/project-7.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-7.jpg" alt="slideshow"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">hamburguer menu</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-8-sm.jpg 300w, assets/img/project-8.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-8.jpg" alt="hamburguer menu"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+            <article class="project">
+              <div class="project__text">
+                <h3 class="project__name">css grid menu</h3>
+                <h4 class="project__technologies">HTML / CSS / JS</h4>
+              </div><img class="project__picture" srcset="assets/img/project-9-sm.jpg 300w, assets/img/project-9.jpg 600w" sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src="assets/img/project-9.jpg" alt="css grid menu"/><a class="project__link" href="#" target="_blank">go to video</a>
+            </article>
+          </div>
+        </section>
+        <section class="contact" id="contact"> 
+          <h2 class="heading--2 contact__heading">contact me </h2>
+          <form class="form contact__form">
+            <input class="form__control" type="text" name="name" placeholder="Name"/>
+            <input class="form__control" type="email" name="email" placeholder="Email"/>
+            <textarea class="form__control" name="message" placeholder="Message"></textarea>
+            <button class="form__btn" type="submit">Submit </button>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer class="footer u-flex-center">
+      <ul class="socialMedia"> 
+        <li class="socialMedia__item"> <a class="socialMedia__link" href="#none"> <i class="fab fa-github-square socialMedia__icon"></i></a></li>
+        <li class="socialMedia__item"> <a class="socialMedia__link" href="#none"> <i class="fab fa-youtube socialMedia__icon"></i></a></li>
+        <li class="socialMedia__item"> <a class="socialMedia__link" href="#none"> <i class="fab fa-facebook-square socialMedia__icon"></i></a></li>
+        <li class="socialMedia__item"> <a class="socialMedia__link" href="#none"> <i class="fab fa-instagram-square socialMedia__icon"></i></a></li>
+      </ul>
+      <p class="copyright">
+         Copyright &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dignissimos.</p>
+    </footer>
+    <script src="js/app.js?t=1624431778434"> </script>
+  </body>
+</html>

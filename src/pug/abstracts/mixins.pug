@@ -1,0 +1,42 @@
+mixin project(name, tech, img)
+   article.project
+      .project__text
+         h3.project__name #{name}
+         h4.project__technologies #{tech}
+      img.project__picture(srcset=`assets/img/${img}-sm.jpg 300w, assets/img/${img}.jpg 600w` sizes="(max-width: 56.25em) 44vw, (max-width: 37.5em) 61vw, 400px" src=`assets/img/${img}.jpg`, alt=name)
+      a.project__link(href="#" target="_blank") go to video
+
+mixin skillBar(name, percentage)
+   .skills__bar 
+      p.skills__textBar #{name}  
+         span #{percentage}
+         | %
+      .skills__percent
+
+mixin serviceCard(title, icon)
+   article.skills__service
+      i.skills__serviceIcon(class=icon)
+      h3.heading--3.skills__serviceHeading #{title} 
+
+mixin form(style)
+   form.form(class=style)
+      input.form__control(type="text", name="name" placeholder="Name")
+      input.form__control(type="email", name="email" placeholder="Email")
+      textarea.form__control(name="message", placeholder="Message")
+      button.form__btn(type="submit") Submit 
+
+mixin socialList 
+   ul.socialMedia 
+      li.socialMedia__item 
+         a.socialMedia__link(href="#none") 
+            i.fab.fa-github-square.socialMedia__icon
+      li.socialMedia__item 
+         a.socialMedia__link(href="#none") 
+            i.fab.fa-youtube.socialMedia__icon
+      li.socialMedia__item 
+         a.socialMedia__link(href="#none") 
+            i.fab.fa-facebook-square.socialMedia__icon
+      li.socialMedia__item 
+         a.socialMedia__link(href="#none") 
+            i.fab.fa-instagram-square.socialMedia__icon
+

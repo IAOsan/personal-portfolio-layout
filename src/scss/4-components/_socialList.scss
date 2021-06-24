@@ -1,0 +1,21 @@
+.socialMedia {
+   margin-bottom: 5rem;
+   &__list {
+      list-style-type: none;
+   }
+   &__item {
+      display: inline-block;
+      margin: 0 2rem;
+   }
+   &__link {
+      padding: .7rem;
+      background-color: var(--c-1);
+      border-radius: 0.5rem;
+      display: block;
+      text-decoration: none;
+   }
+   &__icon {
+      font-size: 3rem;
+      color: #fff;
+   }
+}

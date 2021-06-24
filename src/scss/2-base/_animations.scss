@@ -1,0 +1,5 @@
+@keyframes pulse {
+   0% {border: 2px solid var(--c-1);}
+   50% {border: 2px solid var(--c-1-d);}
+   100% {border: 2px solid var(--c-1);}
+}
